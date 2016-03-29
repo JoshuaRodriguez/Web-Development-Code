@@ -21,7 +21,7 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "././mail/contact_me.php",
+                url: "/contact",
                 type: "POST",
                 data: {
                     name: name,
@@ -30,6 +30,9 @@ $(function() {
                     message: message
                 },
                 cache: false,
+                beforeSend: function() {
+                    $('#success').html("<p><img src='../../images/ajax-loader.gif' /> &nbsp;&nbsp; Sending Message...</p> ");
+                },
                 success: function() {
                     // Enable button & show success message
                     $("#btnSubmit").attr("disabled", false);
