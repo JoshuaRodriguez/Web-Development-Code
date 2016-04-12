@@ -1,0 +1,135 @@
+@import "animate.css";
+
+body {
+    background-color: #282828;
+    padding-top: 70px;
+}
+
+/* Custom CSS for buttons */
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+    outline: 0;
+}
+
+.add-button,
+.remove-button,
+.delete-all-button {
+    box-shadow: 0 6px #999;
+    white-space: normal;
+}
+
+.add-button:active,
+.add-button.active,
+.remove-button:active,
+.remove-button.active,
+.delete-all-button:active,
+.delete-all-button.active {
+    box-shadow: 0 3px #666;
+    transform: translateY(4px);
+}
+
+/* End custom CSS for buttons */
+
+.todo {
+    font-size: 80px;
+    font-family: 'Permanent Marker', cursive;
+    padding-bottom: 50px;
+    color: white;
+}
+
+.inputTask {
+    height: 50px;
+    font-size: 20px;
+}
+
+.padInput {
+    padding-bottom: 20px;
+}
+
+.well {
+    position: relative;
+    margin-top: 40px;
+    width: 171px;
+    height: 180px;
+    margin-left: 5px;
+    margin-right: 5px;
+    white-space: normal;
+}
+
+.complete {
+    background-image: url("../../images/checkmark.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.well:hover {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+}
+
+.add-button-grid {
+
+}
+
+.remove-button-grid {
+
+}
+
+.delete-all-button-grid {
+
+}
+
+/* Media Queries */
+
+@media (max-width: 499px) {
+  .add-button,
+  .remove-button,
+  .delete-all-button {
+    height:50px;
+  }
+
+  .remove-button {
+      padding-bottom:30px;
+  }
+}
+
+@media (max-width: 1200px) {
+    .inputTask {
+        max-width: 555px;
+        margin-left: 70px;
+    }
+
+    .add-button,
+    .remove-button,
+    .delete-all-button {
+        max-width: 165px;
+    }
+
+    .add-button-grid {
+        padding-left: 85px;
+        padding-right: 0px;
+    }
+
+    .remove-button-grid {
+        padding-left: 40px;
+        padding-right: 0px;
+    }
+
+    .delete-all-button-grid {
+        padding-left: 0px;
+        padding-right: 87px;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .inputTask {
+        max-width: 555px;
+    }
+}
