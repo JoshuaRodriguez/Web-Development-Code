@@ -1,0 +1,32 @@
+@import "animate.css";
+
+body {
+    padding-top: 70px;
+    font-family: 'Roboto';
+}
+
+.thumbnail:hover {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+}
+
+.jumbotron {
+    color: #2c3e50;
+    background: #ecf0f1;
+}
+
+.navbar {
+    background: #2c3e50;
+}
+
+.navbar .navbar-nav > li > a {
+    color: white;
+}
+
+.navbar .navbar-nav > li > a:hover {
+    color: rgb(210, 210, 210);
+}
+
+.navbar .navbar-brand {
+    color: white;
+}
