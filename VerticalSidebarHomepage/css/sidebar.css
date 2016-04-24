@@ -1,0 +1,88 @@
+/* SIDEBAR MENU CSS */
+#sidebar {
+    background-color: rgb(63,105,134);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 20%;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'Roboto Slab';
+    text-align: center;
+}
+
+#sidebar ul {
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-left: 0px;
+}
+
+#sidebar ul li {
+    margin: 0 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    list-style: none;
+    transition: all 0.5s;
+}
+
+#sidebar ul li:hover {
+    font-size: 25px;
+    transition: all 0.5s;
+}
+
+#sidebar ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.fa {
+    color: white;
+    transition: all 0.5s;
+}
+
+.fa:hover {
+    color: #EB8A44;
+    transition: all 0.5s;
+}
+
+/* SIDEBAR BRANDING CSS */
+#brand {
+    padding-top: 20px;
+}
+
+#brand img {
+    width: 100%;
+}
+
+#social_media {
+    width: 150px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+#social_media p {
+    font-size: 12px;
+}
+
+@media (max-width: 800px) {
+    #sidebar {
+        display: none;
+        transition: all 0.3s;
+    }
+}
+
+@media (min-width: 801px) {
+    #sidebar {
+        display: inline-block;
+        transition: all 0.3s;
+    }
+}
