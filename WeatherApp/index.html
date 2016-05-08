@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="weatherApp">
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Weather Forecaster</title>
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+      <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+      <link href="weather-icons/css/weather-icons.min.css" rel="stylesheet">
+    </head>
+
+    <body style="padding-top: 70px; font-family: 'Ubuntu', sans-serif;" ng-controller="forecastController">
+
+      <nav-bar></nav-bar>
+
+      <search-form></search-form>
+
+      <display-city></display-city>
+
+      <div class="container">
+        <div class="container-fluid">
+          <div class="row">
+            <weather-panels></weather-panels>
+          </div>
+        </div>
+      </div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-resource.min.js"></script>
+      <script src="angular/app.js"></script>
+    </body>
+
+</html>

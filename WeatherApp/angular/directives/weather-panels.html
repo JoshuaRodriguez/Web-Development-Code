@@ -1,0 +1,21 @@
+<div ng-repeat="weather in weatherResult.list">
+    <div class="col-sm-12 col-md-6 col-lg-4">
+      <div class="panel panel-default">
+        <div class="panel-heading" style="background-color: #0B6EBE;">
+          <h3 class="panel-title" style="color: white; text-align: center;">{{ convertToDate(weather.dt) | date: 'fullDate' }}</h3>
+        </div>
+        <div class="panel-body">
+          <div style="float: left; padding-left: 30px;">
+            <img style="padding-top: 13px;" src="http://openweathermap.org/img/w/{{ weather.weather[0].icon }}.png">
+          </div>
+          <div style="float: right; padding-right:30px;">
+            <p style="font-size: 20px;">High: {{ kelvinToFahrenheit(weather.temp.max) }} <i class="wi wi-fahrenheit" style="font-size: 30px"></i></p>
+            <p style="font-size: 20px;">Low: {{ kelvinToFahrenheit(weather.temp.min) }} <i class="wi wi-fahrenheit" style="font-size: 30px"></i></p>
+          </div>
+        </div>
+        <div class="panel-footer">
+          <span style="font-size: 15px;">{{ weather.humidity }}% Humidity</span>
+        </div>
+      </div>
+    </div>
+</div>
